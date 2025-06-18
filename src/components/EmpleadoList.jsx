@@ -5,7 +5,7 @@ const EmpleadoList = ({ nombre1, imagen1, tipo1, negocio1 }) => {
     <div className="card mb-3 border-0">
       <div className="row g-0 p-1">
         <div className="col-5 col-md-8 col-lg-4">
-          <img src={imagen1} alt="imagen1 de" />
+          <img src={imagen1} className="empleadoAvatar" alt="imagen1 de" />
         </div>
         <div className="col-6 col-md-4 col-lg-8">
           <div className="card-body">
