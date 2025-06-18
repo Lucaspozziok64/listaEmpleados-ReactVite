@@ -12,7 +12,7 @@ function App() {
   const negocio = "BUSINEESS";
 
   //Empleados list
-  const nombre1 = "Atryd Valles";
+  const nombre1 = "Steve Jobs";
   const negocio1 = "CMO";
   const tipo1 = "Marketing";
 
