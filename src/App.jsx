@@ -1,40 +1,27 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import EmpleadoRow from "./components/EmpleadoRow.jsx";
-import Imagen from "./img/710037-da87b61ce1d5f784fc17276591655557-1024-1024.jpg";
-import EmpleadoList from "./components/EmpleadoList.jsx";
-import Imagen1 from './img/Steve-Jobs-biografía.jpg'
+import EmpleadoList from "./components/EmpleadoList";
 
 function App() {
-  //Empleados Avatar
-  const nombre = "Elon Musk";
-  const tipo = "CEO";
-  const negocio = "BUSINEESS";
 
-  //Empleados list
-  const nombre1 = "Steve Jobs";
-  const negocio1 = "CMO";
-  const tipo1 = "Marketing";
+  const empleados = [
+  { id: 1, fullName: "Laya Dueñas", title: "CEO", department: "Business", pic: "empleado01.png" },
+  { id: 2, fullName: "Astryd Vallés", title: "CMO", department: "Marketing", pic: "empleado02.png" },
+  { id: 3, fullName: "Shantell Meza", title: "CFO", department: "Business", pic: "empleado03.png" },
+  { id: 4, fullName: "Sergio Ocampo", title: "CTO", department: "Engineering", pic: "empleado04.png" },
+  { id: 5, fullName: "Ares Jiménez", title: "Art Director", department: "Marketing", pic: "empleado05.png" },
+  { id: 6, fullName: "Marta Pérez", title: "Frontend Dev", department: "Engineering", pic: "empleado06.png" },
+  {id: 7, fullName: "Ellen Balderas", title: "Digital Strategist", department: "Marketing", pic: "empleado07.png" },
+  { id: 8, fullName: "Cynthia Valentín", title: "Backend Dev", department: "Engineering", pic: "empleado08.png" },
+  { id: 9, fullName: "Bernard Jung", title: "DevOps Engineer", department: "Engineering", pic: "empleado09.png" },
+];
+
 
   return (
     <>
-      <main className="container my-2">
-        <EmpleadoRow
-          nombre={nombre}
-          tipo={tipo}
-          negocio={negocio}
-          imagen={Imagen}
-        />
-        <h5 className="text-primary text-end">&lt;Empleado List/&gt;</h5>
-        <section className="contenedorEmpleadoList">
-          <EmpleadoList
-            nombre1={nombre1}
-            negocio1={negocio1}
-            tipo1={tipo1}
-            imagen1={Imagen1}
-          />
-        </section>
-      </main>
+    <div style={{ maxWidth: "600px", margin: "2rem auto", border: "2px solid blue", padding: "5px" }}>
+      <EmpleadoList empleados={empleados} />
+    </div>
     </>
   );
 }
