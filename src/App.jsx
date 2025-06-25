@@ -15,13 +15,13 @@ function App() {
   { id: 9, fullName: "Bernard Jung", title: "DevOps Engineer", department: "Engineering", pic: "empleado-09.png" },
 ];
 
-
   return (
     <>
     <main className="container my-2">
-        <div style={{ maxWidth: "600px", margin: "2rem auto", border: "2px solid blue", padding: "5px" }}>
-      <EmpleadoList empleados={empleados} />
-    </div>
+      <h3 className="text-center mb-0">Lista Empleados</h3>
+      <div className="my-3 contenedorEmpleados" style={{ maxWidth: "600px", margin: "2rem auto", border: "2px solid blue", padding: "5px" }}>
+        <EmpleadoList empleados={empleados} />
+      </div>
     </main>
     </>
   );
