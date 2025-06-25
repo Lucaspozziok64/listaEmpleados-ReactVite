@@ -35,6 +35,10 @@ function App() {
         <EmpleadoList empleados={empleados} />
       </div>
     </main>
+    <footer className="bg-black text-center text-white">
+      <p className="mb-0">&copy;Todos los derechos reservados</p>
+      <p className="mb-0">Desarrollado por <a href="https://github.com/Lucaspozziok64http://">Lucas Figueroa</a>👨‍💻</p>
+    </footer>
     </>
   );
 }
